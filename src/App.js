@@ -12,7 +12,7 @@ const App = () => {
         <div className='appWrapper'>
             <Header/>
             <Navbar/>
-            {/*<ProfilenInfo />*/}
+
             <div className='appWrapperContent'>
 
                     <Routes>

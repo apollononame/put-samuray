@@ -5,3 +5,94 @@
 .posts {
     margin-top: 10px;
 }
+
+
+/* Button"ADD POST" */
+
+.button {
+ position: relative;
+ display: inline-block;
+ padding: 15px 30px; 
+ color: darkslateblue;
+ text-transform: uppercase;
+ text-decoration: none;
+ font-size: 24px;
+ letter-spacing: 4px;
+ overflow: hidden;
+ transition: 0.2s;
+}
+
+.buttonLine {
+position: absolute;
+display: block;
+
+}
+
+.buttonLineTop {
+   top: 0;
+   left: -100%;
+   width: 100%;
+   height: 2px;
+   background:linear-gradient(90deg, transparent, darkslateblue) ;
+}
+
+.button:hover .buttonLineTop {
+    left: 100%;
+    transition: 1s;
+    transition-delay: 250ms;
+}
+
+.buttonLineBottom {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background:linear-gradient(270deg, transparent, darkslateblue) ;
+ }
+ 
+ .button:hover .buttonLineBottom {
+     right: 100%;
+     transition: 1s;
+     transition-delay: 250ms;
+ }
+
+ .buttonLineLeft {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background:linear-gradient(0deg, transparent, darkslateblue) ;
+ }
+ 
+ .button:hover .buttonLineLeft {
+     bottom: 100%;
+     transition: 1s;
+     
+ }
+
+ .buttonLineRight {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background:linear-gradient(180deg, transparent, darkslateblue) ;
+ }
+ 
+ .button:hover .buttonLineRight {
+     top: 100%;
+     transition: 1s;
+     
+ }
+
+ .button:hover{
+    box-shadow: 0 0 10px darkslateblue, 0 0 40px darkslateblue, 0 0 80px darkslateblue ;
+    transition-timing-function: 1s;
+    background-color: darkslateblue;
+    color: whitesmoke ;
+    transition-delay: 500ms;
+    cursor: pointer;
+ }
+
+
+
+
